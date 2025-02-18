@@ -28,7 +28,7 @@ body {
 }
 
 #rightnavbar {
-    font-weight: 400;
+    font-weight: 600;
     display: flex;
 }
 
@@ -42,24 +42,49 @@ body {
     font-size: 20px;
 }
 
-#aboutmeheader {
+#introheader {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: left;
     font-weight: 600;
     font-size: 24px;
 }
 
-#githublink {
-    text-decoration: none;
-    font-weight: 500;
-    padding: 10px;
-    margin: 15px;
-    user-select: none;
-    color: black;
-    background-color: #3B82F6E6;
-    border-radius: 0.75rem;
+#introblock {
+    display: flex;
+    background-color: #25212B;
 }
 
-#aboutmeblock {
+#introlinks {
     display: flex;
+    user-select: none;
+    a {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+}
+
+#githublink {
+    padding: 10px;
+    margin: 15px;
+    background-color: #5A4D66;
+    border-radius: 0.75rem;
+    display: inline-flex;
+}
+
+#githublink img {
+    height: 20px;
+    width: auto;
+}
+
+#maillink {
+    padding: 10px;
+    margin: 15px;
+    background-color: #5A4D66;
+    border-radius: 0.75rem;
+    display: inline-flex;
+}
+
+#maillink img {
+    height: 20px;
+    width: auto;
+    padding-right: 5px;
 }
