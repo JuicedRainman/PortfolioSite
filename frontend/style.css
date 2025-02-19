@@ -10,6 +10,10 @@ body {
     font-family: Arial, sans-serif;
 }
 
+#wrapper {
+    margin: auto;
+    max-width: 60%; /* fix the introblock's background color not being completely long*/
+}
 #navbar {
     list-style: none;
     margin: 0;
@@ -47,6 +51,7 @@ body {
     text-align: left;
     font-weight: 600;
     font-size: 24px;
+    margin-left: 15px;
 }
 
 #introblock {
@@ -62,7 +67,7 @@ body {
     }
 }
 
-#githublink {
+#introgithublink {
     padding: 10px;
     margin: 15px;
     background-color: #5A4D66;
@@ -70,12 +75,12 @@ body {
     display: inline-flex;
 }
 
-#githublink img {
+#introgithublink img {
     height: 20px;
     width: auto;
 }
 
-#maillink {
+#intromaillink {
     padding: 10px;
     margin: 15px;
     background-color: #5A4D66;
@@ -83,8 +88,64 @@ body {
     display: inline-flex;
 }
 
-#maillink img {
+#intromaillink img {
     height: 20px;
     width: auto;
     padding-right: 5px;
+}
+
+.introheaderspan {
+    color: #6EC3F4; /* Neon Blue */
+    font-weight: bold;
+}
+
+#aboutmeheader {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+}
+
+#aboutmetext {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+
+#aboutmelinks {
+    display: flex;
+    flex-wrap: wrap; /* why does this work??? */
+    user-select: none;
+    align-items: center;
+    justify-content: center;
+    a {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+}
+
+#amgithublink {
+    padding: 10px;
+    margin: 15px;
+    background-color: #5A4D66;
+    border-radius: 0.75rem;
+    display: inline-flex;
+}
+
+#amgithublink img {
+    height: 20px;
+    width: auto;
+}
+
+#ammaillink {
+    padding: 10px;
+    margin: 15px;
+    background-color: #5A4D66;
+    border-radius: 0.75rem;
+    display: inline-flex;
+}
+
+#ammaillink img {
+    height: 20px;
+    width: auto;
 }

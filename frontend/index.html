@@ -8,44 +8,54 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <nav>
-        <div id="navbar">
-            <a id="leftnavbar" href="#">Wouter</a>
-            <div id="rightnavbar">
-                <a href="#">Home</a>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
+    <div id="wrapper">
+        <nav>
+            <div id="navbar">
+                <a id="leftnavbar" href="#">Wouter</a>
+                <div id="rightnavbar">
+                    <a href="#">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                </div>
             </div>
-        </div>
-    </nav>
-    <main>
-        <section id="intro">
-            <div id="introblock">
-                <div id="introblockleft">
-                    <p id="introheader">
-                        Hey, I'm Wouter. <br>
-                        I like coding, tech, and figuring things out. <br>
-                        I build random projects, break things, and (sometimes) fix them.
-                    </p>
-                    <div id="introlinks">
-                        <a id="githublink" href="https://github.com/juicedrainman" target="_blank"><img src="img/gh-logo.png"><img src="img/gh-text.png"></a>
-                        <a id="maillink" href="mailto:w.vanreekum@proton.me" target="_blank"><img src="img/pm-logo.svg"></a>
+        </nav>
+        <main>
+            <section id="intro">
+                <div id="introblock">
+                    <div id="introblockleft">
+                        <p id="introheader">
+                            Hey, I'm <span class="introheaderspan">Wouter</span>.<br>
+                            I like <span class="introheaderspan">coding</span>, <span class="introheaderspan">tech</span> and <span class="introheaderspan">figuring things out</span>.<br>
+                            I <span class="introheaderspan">build</span> random projects, <span class="introheaderspan">break</span> things, and <span class="introheaderspan">(sometimes) fix</span> them.
+                        </p>
+                        <div id="introlinks">
+                            <a id="introgithublink" href="https://github.com/juicedrainman" target="_blank"  ><img src="img/gh-logo.png"><img src="img/gh-text.png"></a>
+                            <a id="intromaillink" href="mailto:w.vanreekum@proton.me" target="_blank"><img src="img/pm-logoname.svg"></a>
+                        </div>
+                    </div>
+                    <div id="introblockright">
                     </div>
                 </div>
-                <div id="introblockleft">
-                </div>
-            </div>
-        </section>
-        <section id="about">
-            <div id="aboutmeblock">
-                <div id="aboutmeblockleft">
-                    <p id="aboutmeheader">
+            </section>
+            <section id="about">
+                <div id="aboutmeblock">
+                    <p id="aboutmeheader">About Me</p>
+                    <p id="aboutmetext">
+                        I like messing around with software, hardware and everything in between.<br>
+                        I'm an avid hardware enthusiast. Overclocking, testing different configurations, you name it, I have probably already tried it.<br>
+                        I'm currently working on getting Llama working in docker with a vector storage for RAG. You wanna talk anything tech? Hit me up.
                     </p>
+                    <div id="aboutmelinks">
+                        <a id="amgithublink" href="https://github.com/juicedrainman" target="_blank"><img src="img/gh-logo.png"></a>
+                        <a id="ammaillink" href="mailto:w.vanreekum@proton.me" target="_blank"><img src="img/pm-logo.svg"></a>
+                    </div>
+                    <div id="githubstats">
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section id="projects">
-        </section>
-    </main>
+            </section>
+            <section id="projects">
+            </section>
+        </main>
+    </div>
 </body>
 </html>
