@@ -10,10 +10,15 @@ body {
     font-family: Arial, sans-serif;
 }
 
-#wrapper {
+section {
     margin: auto;
     max-width: 60%; /* fix the introblock's background color not being completely long*/
 }
+
+.wrapper.grey {
+    background-color: #25212B;
+}
+
 #navbar {
     list-style: none;
     margin: 0;
@@ -56,7 +61,6 @@ body {
 
 #introblock {
     display: flex;
-    background-color: #25212B;
 }
 
 #introlinks {
@@ -115,7 +119,6 @@ body {
 
 #aboutmelinks {
     display: flex;
-    flex-wrap: wrap; /* why does this work??? */
     user-select: none;
     align-items: center;
     justify-content: center;
@@ -148,4 +151,10 @@ body {
 #ammaillink img {
     height: 20px;
     width: auto;
+}
+
+#projectsheader {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 35px;
 }

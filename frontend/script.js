@@ -42,3 +42,5 @@ window.addEventListener("load", () => {
             document.getElementById("message").innerText = "Fout bij het laden van gegevens.";
         });
 });
+
+    // Throw projects into website from db "projects"
