@@ -158,3 +158,47 @@ section {
     font-weight: 700;
     font-size: 35px;
 }
+
+#contactheader {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+#contacttext {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+
+#contactlinks {
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    user-select: none;
+    align-items: center;
+    justify-content: center;
+    a {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+}
+
+#contactmaillink {
+    padding: 10px;
+    margin: 15px;
+    color: #1B1340;
+    background-color: #5A4D66;
+    border-radius: 0.75rem;
+    font-size: 25px;
+    display: inline-flex;
+    text-decoration: none;
+    user-select: none;
+
+}
+
+#contactmaillink img {
+    height: 30px;
+    width: auto;
+    margin-right: 5px;
+}
