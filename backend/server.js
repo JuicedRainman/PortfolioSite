@@ -31,7 +31,7 @@ app.get("/skills", async (req, res) => {
   }
 });
 
-app.listen(5000, () => console.log("Server draait op poort 5000"));
+
 
 // API projects
 
@@ -42,6 +42,6 @@ app.get('/projects', async (req, res) => {
   } catch (error) {
     res.status(500).json({ message: "Fout bij ophalen van projecten", error});
   }
-
-  app.listen(5000, () => console.log("Server draait op poort 5000"));
 });
+
+app.listen(5000, () => console.log("Server draait op poort 5000"));

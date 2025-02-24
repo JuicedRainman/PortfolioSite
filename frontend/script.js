@@ -52,7 +52,7 @@ window.addEventListener("load", () => {
             data.forEach(project => {
                 html +=
                 `<div class="card">
-                    <h3>${project.naam}</h3>
+                    <h3>${project.name}</h3>
                     <p>${project.description}</p>
                     <a href="${project.repoUrl}" target="_blank">GitHub Repo</a>
                 </div>`;
