@@ -41,6 +41,26 @@ window.addEventListener("load", () => {
             console.error("Fout bij ophalen van skill data:", error);
             document.getElementById("message").innerText = "Fout bij het laden van gegevens.";
         });
-});
 
-    // Throw projects into website from db "projects"
+
+    // Throw projects into website from collection "projects"
+    fetch("http://localhost:5000/projects")
+        .then(response => response.json())
+        .then(data =>  {
+            console.log("Projects retrieved:", data);
+            let html = `<div class="projectcontainer">`;
+            data.forEach(project => {
+                html +=
+                `<div class="card">
+                    <h3>${project.naam}</h3>
+                    <p>${project.description}</p>
+                    <a href="${project.repoUrl}" target="_blank">GitHub Repo</a>
+                </div>`;
+            });
+            document.getElementById("projects").innerHTML = html + `</div>`;
+        })
+        .catch(error => {
+            console.error("Fout bij ophalen van projecten:", error);
+            document.getElementById("projects").innerText = "Fout bij laden van projecten";
+        });
+});
