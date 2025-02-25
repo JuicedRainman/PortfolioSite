@@ -1,1 +1,1 @@
-add background blur to navbar
+hashtags should go to the title instead of navbar going over the titles

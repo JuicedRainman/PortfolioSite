@@ -22,15 +22,18 @@ section {
     width: 100%;
     padding: 40px 0;
 }
+
 .wrapper:first-child {
     margin-top: 40px
 }
+
 .wrapper.grey {
     background-color: #25212B;
 }
 
 #navbar {
-    max-width: 60%;
+    max-width: 100%;
+    backdrop-filter: blur(1px);
     margin: 0;
     padding: 0;
     display: flex;
