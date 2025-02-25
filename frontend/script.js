@@ -33,7 +33,7 @@ window.addEventListener("load", () => {
         .then(data => {
             let html = `<ul>`
             for(let i = 0; i < data.length; i++) {
-                html += `<li>${data[i].naam} - ${data[i].level} - ${data[i].category}`
+                html += `<li>${data[i].name} - ${data[i].level} - ${data[i].category}`
             }
             document.getElementById("message").innerHTML = html + `</ul>`;
         })
@@ -54,7 +54,7 @@ window.addEventListener("load", () => {
                 `<div class="card">
                     <h3>${project.name}</h3>
                     <p>${project.description}</p>
-                    <a href="${project.repoUrl}" target="_blank">GitHub Repo</a>
+                    <a href="${project.repoUrl}" target="_blank"><img src="img/gh-logo.png"></a>
                 </div>`;
             });
             document.getElementById("projects").innerHTML = html + `</div>`;

@@ -16,12 +16,6 @@ mongoose.connect("mongodb://mongo:27017/db1", {
 const db = mongoose.connection;
 db.once("open", () => console.log("MongoDB verbonden!"));
 
-// API TEST
-app.get("/api", (req, res) => {
-  console.log('testing')
-  res.json({ message: "Hallo vanaf de backend!" });
-});
-
 // API SKILLS
 app.get("/skills", async (req, res) => {
   try {
@@ -38,6 +32,7 @@ app.get("/skills", async (req, res) => {
 
 app.get('/projects', async (req, res) => {
   try {
+    console.log("projects");
     const projects = await Project.find();
     res.json(projects);
   } catch (error) {

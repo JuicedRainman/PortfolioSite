@@ -3,6 +3,9 @@
     color: white
 }
 
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: #1F1B24;
     margin: 0;
@@ -12,24 +15,36 @@ body {
 
 section {
     margin: auto;
-    max-width: 60%; /* fix the introblock's background color not being completely long*/
+    max-width: 60%;
 }
 
+.wrapper {
+    width: 100%;
+    padding: 40px 0;
+}
+.wrapper:first-child {
+    margin-top: 40px
+}
 .wrapper.grey {
     background-color: #25212B;
 }
 
 #navbar {
-    list-style: none;
+    max-width: 60%;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: row;
     color: white;
     justify-content: space-between;
-    right: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
+}
+
+#navwrapper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 #leftnavbar {
@@ -55,7 +70,7 @@ section {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: left;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 25px;
     margin-left: 15px;
 }
 
@@ -201,4 +216,22 @@ section {
     height: 30px;
     width: auto;
     margin-right: 5px;
+}
+
+.card {
+    margin-top: 20px;
+    padding: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #352f3e;
+    border-radius: 0.75rem;
+    border: 5px;
+    width: 90%;
+    max-width: 800px;
+    margin-left: auto; 
+    margin-right: auto; /* Centers it */
+}
+
+.card img {
+    height: 35px;
+    width: auto;
 }

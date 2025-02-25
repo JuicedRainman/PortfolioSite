@@ -1,9 +1,9 @@
 const mongoose = require("mongoose");
 
-const projectSchema = new mongoose.Schema({
+const ProjectSchema = new mongoose.Schema({
     name: String,
     repoUrl: String,
     description: String
 });
 
-module.exports = mongoose.model("Project", projectSchema);
+module.exports = mongoose.model("Project", ProjectSchema);
