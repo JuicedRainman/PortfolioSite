@@ -1,7 +1,5 @@
 window.addEventListener("load", () => {
 
-
-    //progresswidth calculating for the progers bar on the skills cards
     // eerste server test
     console.info('testing server');
 
