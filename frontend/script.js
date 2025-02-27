@@ -26,9 +26,6 @@ window.addEventListener("load", () => {
                 <div class="skillcards">
                     <h3>${skill.name}</h3>
                     <p>Level: ${skill.level}</p>
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: ${progressWidth}%;"></div>
-                    </div>
                     <p>Category: ${skill.category}</p>
                 </div>`;
             });
