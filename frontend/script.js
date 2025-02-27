@@ -1,16 +1,18 @@
 window.addEventListener("load", () => {
 
+
+    //progresswidth calculating for the progers bar on the skills cards
     // eerste server test
     console.info('testing server');
 
     fetch("http://localhost:5000/api")
         .then(response => response.json())
         .then(data => {
-            document.getElementById("message").innerText = data.message;
+            document.getElementById("skills").innerText = data.message;
         })
         .catch(error => {
             console.error("Fout bij de eerste connectie:", error);
-            document.getElementById("message").innerText = "Fout bij laden van gegevens.";
+            document.getElementById("skills").innerText = "Fout bij laden van gegevens.";
         });
 
 
@@ -19,27 +21,24 @@ window.addEventListener("load", () => {
     fetch("http://localhost:5000/skills")
         .then(response => response.json())
         .then(data => {
-            console.log('dataRetrieved', data);
-        })
-        .catch(error => {
-            console.error("Fout bij ophalen van skil data:", error);
-            document.getElementById("message").innerText = "Fout bij laden van gegevens.";
-        });
-    
-        fetch("http://localhost:5000/api")
-
-    fetch("http://localhost:5000/skills")
-        .then(response => response.json())
-        .then(data => {
-            let html = `<ul>`
-            for(let i = 0; i < data.length; i++) {
-                html += `<li>${data[i].name} - ${data[i].level} - ${data[i].category}`
-            }
-            document.getElementById("message").innerHTML = html + `</ul>`;
+            console.log("Skills retrieved:", data);
+            let html = `<div class="skillcontainer">`;
+            data.forEach(skill => {
+                html += `
+                <div class="skillcards">
+                    <h3>${skill.name}</h3>
+                    <p>Level: ${skill.level}</p>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: ${progressWidth}%;"></div>
+                    </div>
+                    <p>Category: ${skill.category}</p>
+                </div>`;
+            });
+            document.getElementById("skills").innerHTML = html + `</div>`;
         })
         .catch(error => {
             console.error("Fout bij ophalen van skill data:", error);
-            document.getElementById("message").innerText = "Fout bij het laden van gegevens.";
+            document.getElementById("skills").innerText = "Fout bij laden van skills.";
         });
 
 
@@ -51,7 +50,7 @@ window.addEventListener("load", () => {
             let html = `<div class="projectcontainer">`;
             data.forEach(project => {
                 html +=
-                `<div class="card">
+                `<div class="projectcards">
                     <h3>${project.name}</h3>
                     <p>${project.description}</p>
                     <a href="${project.repoUrl}" target="_blank"><img src="img/gh-logo.png"></a>
