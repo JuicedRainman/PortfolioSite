@@ -1,2 +1,3 @@
 hashtags should go to the title instead of navbar going over the titles // USE PADDING ON BLOCKS
-fix line height
+    - wtf is going on with skills? that shi cursed
+        - padding was added to all, which worked except for skills.
