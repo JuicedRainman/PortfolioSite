@@ -55,6 +55,16 @@ db.skills.insertMany([
         category: "Programming"
     },
     {
+        name: "Python",
+        level: 4,
+        category: "Programming"
+    },
+    {
+        name: "Git",
+        level: 6,
+        category: "Programming"
+    },
+    {
         name: "VM's",
         level: 7,
         category: "DevOps"
@@ -67,6 +77,21 @@ db.skills.insertMany([
     {
         name: "Computer Knowledge",
         level: 8,
+        category: "Hardware"
+    },
+    {
+        name: "Linux",
+        level: 6,
+        category: "Operating Systems"
+    },
+    {
+        name: "Windows",
+        level: 7,
+        category: "Operating Systems"
+    },
+    {
+        name: "Networking",
+        level: 5,
         category: "Hardware"
     }
 ]);
