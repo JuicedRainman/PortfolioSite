@@ -1,3 +1,4 @@
-hashtags should go to the title instead of navbar going over the titles // USE PADDING ON BLOCKS
-    - wtf is going on with skills? that shi cursed
-        - padding was added to all, which worked except for skills.
+EVERYTHING FIXED \\
+
+changelog:
+    fixed navbar not going to the skills section correctly
